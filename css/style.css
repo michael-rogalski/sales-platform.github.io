@@ -875,6 +875,8 @@ input:nth-of-type(4) {
 .contact-box {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 1em 0 1em 0;
 }
 
 .questions-left h1 {
@@ -887,47 +889,70 @@ input:nth-of-type(4) {
   margin-top: 0;
 }
 
-.questions-left p {
+.questions-left > p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0;
   color: #000000;
-  margin-top: 22px;
   margin-bottom: 0;
 }
 
-.contact-box p {
+.contact-box-one > p {
+  display: flex;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0;
   color: #a5a5a5;
-  margin-top: 42px;
-  margin-left: 45px;
+  margin-left: 20px;
   position: relative;
 }
 
-.info-mail:before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url(/images/MailIcon.svg);
-  width: 27px;
-  height: 27px;
-  left: -45px;
-  top: -3px;
+.contact-box-two > p {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #a5a5a5;
+  margin-left: 20px;
+  position: relative;
+}
+.contact-box-one > p {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #a5a5a5;
+  margin-left: 20px;
+  position: relative;
 }
 
-.phone-number:before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url(/images/PhoneIcon.svg);
+.contact-box-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-box-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-mail {
+  display: flex;
   width: 27px;
   height: 27px;
-  left: -35px;
-  top: -3px;
+}
+
+.phone-number {
+  display: flex;
+  width: 27px;
+  height: 27px;
+  margin-left: 2em;
 }
 
 .questions-right {
@@ -1363,12 +1388,13 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
+    align-items: flex-start;
   }
-
   .phone-number {
-    content: "";
-    position: absolute;
-    left: -0.5em;
+    display: flex;
+    width: 27px;
+    height: 27px;
+    margin-left: unset;
   }
 
   .questions input[type="text"] {
