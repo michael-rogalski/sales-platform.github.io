@@ -912,7 +912,7 @@ input:nth-of-type(4) {
   content: "";
   display: block;
   position: absolute;
-  background-image: url(/images/Mail\ Icon.svg);
+  background-image: url(/images/MailIcon.svg);
   width: 27px;
   height: 27px;
   left: -45px;
@@ -923,7 +923,7 @@ input:nth-of-type(4) {
   content: "";
   display: block;
   position: absolute;
-  background-image: url(/images/Phone\ Icon.svg);
+  background-image: url(/images/PhoneIcon.svg);
   width: 27px;
   height: 27px;
   left: -35px;
